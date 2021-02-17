@@ -1,0 +1,31 @@
+login_data:
+  - username: '2445384234@qq.com'
+    passwd: '2445384234'
+    assert: [ '正确跳转' ]
+  - username: ''
+    passwd: ''
+    assert: [ '账号不能为空']
+  - username: '  '
+    passwd: ''
+    assert: [ '账号不能为空']
+  - username: '2445384222@qq.com'
+    passwd: ''
+    assert: [ '密码不能为空']
+  - username: '2445384222@qq.com'
+    passwd: '  '
+    assert: [ '密码不能为空']
+  - username: '1'
+    passwd: '2'
+    assert: [ '账号输入有误']
+  - username: '2445384222@qq.com'
+    passwd: '2'
+    assert: [ '账号不存在']
+  - username: '2445384234@qq.com'
+    passwd: '22'
+    assert: [ '密码错误' ]
+  - username: '2445384234@qq.com'
+    passwd: '2445384234'
+    assert: [ '正确跳转' ]
+creat_garbage:
+  username: '2445384234@qq.com'
+  passwd: '2445384234'
