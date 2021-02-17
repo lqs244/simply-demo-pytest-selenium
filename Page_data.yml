@@ -1,0 +1,28 @@
+Page_login:
+  url: 'https://www.processon.com/login?f=index'
+
+Page_login_xpaths:
+  xpath_user_textbox: '//*[@id="login_email"]'
+  xpath_passwd_textbox: '//*[@id="login_password"]'
+  xpath_login_button: '//*[@id="signin_btn"]'
+  xpath_passwd_error: '//*[@id="login_password"]/following-sibling::div'
+  xpath_user_error: '//*[@id="login_email"]/following-sibling::div'
+  xpath_newfile: '//*[@id="new-file"]'
+
+show_text:
+  text_assert_usernameerror: '账号输入有误'
+  text_assert_usernamevoid: '账号不能为空'
+  text_assert_passwderror: '密码错误，请重新输入'
+  text_assert_passwdvoid: '密码不能为空'
+  text_assert_usernamenone: '账号不存在'
+Page_new_xpath:
+  xpath_new_button: '//*[@id="new-file"]'
+  xpaths_new: '//*[@class="list-text"]'
+  text_to_des: [ '流程图','思维导图','思维笔记','原型图','UML','网络拓扑图','组织结构图','BPMN' ]
+  xpath_file_listitems: '//*[@class="file-list-item"]'
+  xpath_close_dialog: '//*[@class="dialog-close"]'
+  xpath_menu_new: '//*[@class="create-btn-list popover"]'
+  xpath_menu_context_click: '//*[@class="menu"]/ul/li'
+  url_my: 'https://www.processon.com/diagrams'
+  url_g: 'https://www.processon.com/trash'
+  xpath_del_ok: '//*[@class="pro-btn default okbtn"]'
